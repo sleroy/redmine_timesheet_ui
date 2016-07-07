@@ -1,0 +1,22 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "Redmine Timesheet UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sleroy/redmine_timesheet_ui.git"
+  },
+  "author": "Sylvain Leroy",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/sleroy/redmine_timesheet_ui/issues"
+  },
+  "homepage": "https://github.com/sleroy/redmine_timesheet_ui#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
