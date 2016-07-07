@@ -1,0 +1,46 @@
+extends layout
+block css    
+    link(href='bower/jquery-treegrid/css/jquery.treegrid.css', rel='stylesheet', type='text/css')
+block content
+  h1= title
+  .row
+    .col-sm-offset-3.col-md-offset-3.col-md-6.col-sm-6.col-xs-12
+      +panel("Aide", "success") Cette page permet de saisir l'activité d'une journée. Elle liste l'ensemble des tickets et des projets qui sont affectés à la personne.
+  .row
+    .col-sm-10.col-sm-offset-1
+      table#timesheet_table
+        caption Timesheet Table
+        thead
+          tr
+            th Project/Ticket/Activity
+            th Today
+        tbody
+          tr.treegrid-1
+            td 
+              em Hors Business
+            td.project
+              input.input-sm.form-control(type='text', placeholder='0',maxlength='4')
+          tr.treegrid-2.treegrid-parent-1
+            td.ticket
+              Ticket Bla Bla bla 
+              a(href="/issues/180") #180
+            td 
+              input.input-sm.form-control(type='text', placeholder='0',maxlength='4')
+          tr.treegrid-3.treegrid-parent-2
+            td.activity Development
+            td 
+              input.input-sm.form-control(type='text', placeholder='0',maxlength='4')
+          tr.treegrid-4.treegrid-parent-2
+            td.activity Testing
+            td 
+              input.input-sm.form-control(type='text', placeholder='0',maxlength='4')
+          tr.treegrid-5
+            td.project Node 2: I am another root node, but without children
+            td Hurray!
+block scripts
+    script(type='text/javascript', src='bower/jquery-treegrid/js/jquery.treegrid.js')
+    script(type='text/javascript', src='bower/jquery-treegrid/js/jquery.treegrid.bootstrap3.js')
+    script(type='text/javascript').
+      $(document).ready(function() {
+        $('#timesheet_table').treegrid();
+      });

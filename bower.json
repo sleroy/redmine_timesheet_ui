@@ -1,0 +1,9 @@
+{
+    "name": "redmine-timesheet-ui",
+    "dependencies": {
+        "bootstrap": "latest",
+        "jquery-treetable": "latest",        
+        "modernizr": "latest",
+        "jquery": "1.10.2"
+    }
+}
