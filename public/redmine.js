@@ -1,7 +1,7 @@
 var unirest = require('unirest');
 var token = '';
-//var serverURL = 'https://ksf.metrixware.local/redmine';
-var serverURL = 'http://scm.tocea.com:90/redmine';
+var serverURL = 'https://ksf.metrixware.local/redmine';
+//var serverURL = 'http://scm.tocea.com:90/redmine';
  
 var commonHeaders = {
     'Content-type' : 'application/xml',
